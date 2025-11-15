@@ -1,0 +1,150 @@
+/* GENERAL ELEMENTS ================================================ */
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Source Sans Pro, "Segoe UI", Arial;;
+}
+
+html, body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main, .carousel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 50px 0px;
+    flex:1;
+    flex-direction:column;
+    width: 70%;
+}
+
+h1 {
+    font-size: 50px;
+    color: #0065ef;
+    margin: 0;
+}
+
+.vertical-center {
+    justify-content: center;
+}
+
+
+
+/* NAVBAR ========================================================== */
+nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0.1rem 1rem rgba(12, 12, 12, 0.35);
+    min-height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #000;
+    cursor: pointer;
+
+}
+
+nav a:not([href]){
+    color: #0065ef;
+    cursor: default;
+    font-weight: bold;
+}
+
+
+
+/* FORM & ELEMENTS ================================================= */
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+input, button, select {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid black;
+}
+
+input, select {
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0065ef;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* TOASTS ========================================================== */
+#toast {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.toast-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.toast-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+
+/* RANDOM IMAGE ==================================================== */
+.random-image {
+    height: 150px;
+    border-radius: 8px;
+    flex: 0 0 auto;
+    width: auto;
+    object-fit: cover;
+}
+
+
+
+/* FOOTER ========================================================== */
+footer {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #14192c;
+    padding: 30px;
+}
