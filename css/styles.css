@@ -40,6 +40,7 @@ h1 {
     font-size: 50px;
     color: #0065ef;
     margin: 0;
+    text-align: center;
 }
 
 .vertical-center {
@@ -81,6 +82,7 @@ form {
     gap: 20px;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 input, button, select {
@@ -91,7 +93,7 @@ input, button, select {
 }
 
 input, select {
-    padding: 10px;
+    padding: 8px 15px;
 }
 
 button {
@@ -100,6 +102,12 @@ button {
     border: none;
     cursor: pointer;
     color: white;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
 }
 
 

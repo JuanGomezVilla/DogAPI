@@ -1,0 +1,26 @@
+/* RESPONSIVE */
+@media only screen and (max-width: 900px){    
+    form, .carousel {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    select, input, label {
+        width: 100%;
+    }
+
+    main {
+        width: 75%;
+    }
+}
