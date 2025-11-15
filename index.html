@@ -5,23 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DogAPI - Home</title>
 
-        <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Scripts (JQuery: https://code.jquery.com/jquery-3.7.1.min.js) -->
+        <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
         <!-- Navbar -->
         <nav>
-            <a class="nav-item">Home</a>
-            <a class="nav-item" href="search.html">Search</a>
+            <a>Home</a>
+            <a href="search.html">Search</a>
         </nav>
 
-        <!-- Carousel -->
-        <div class="carousel" id="carousel"></div>
+        <!-- Main section -->
+        <main class="vertical-center">
+            <!-- Toast -->
+            <div id="toast"></div>
+
+            <!-- Title -->
+            <h1>DogAPI - @JuanGV</h1>
+
+            <!-- Carousel -->
+            <div class="carousel" id="carousel"></div>
+        </main>
 
         <!-- Footer -->
         <footer>
             <p>Created by @JuanGV</p>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>

@@ -5,9 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DogAPI - Search</title>
 
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+        <link rel="stylesheet" href="css/styles.css">
+
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/search.js"></script>
     </head>
     <body>
         <!-- Navbar -->
@@ -16,24 +21,34 @@
             <a class="nav-item">Search</a>
         </nav>
 
-        <!-- Search form -->
-        <form>
-            <div class="form-group">
-                <label><b>Dog breed:</b></label>
-                <select id="selectDogBreed"></select>
-            </div>
-            <div class="form-group">
-                <label><b>Dog Sub-breed:</b></label>
-                <select id="selectDogSubBreed"></select>
-            </div>
-            <div class="form-group">
-                <label><b>Amount images:</b></label>
-                <input type="number" min="1" max="10" placeholder="Amount..." required />
-            </div>
-            <div class="form-group">
-                <button type="submit">Get images</button>
-            </div>
-        </form>
+        <!-- Main section -->
+        <main>
+            <!-- Toast -->
+            <div id="toast"></div>
+
+            <!-- Search form -->
+            <form>
+                <div class="form-group">
+                    <label><b>Dog breed:</b></label>
+                    <select id="selectDogBreed" required>
+                        <option value selected disabled>-- Select dog breed --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label><b>Dog Sub-breed:</b></label>
+                    <select id="selectDogSubBreed" required disabled>
+                        <option value>-- Select first a dog sub-breed --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label><b>Amount images:</b></label>
+                    <input id="inputAmountImages" type="number" min="1" max="10" placeholder="Amount..." required />
+                </div>
+                <div class="form-group">
+                    <button type="submit">Get images</button>
+                </div>
+            </form>
+        </main>
 
         <!-- Footer -->
         <footer>
